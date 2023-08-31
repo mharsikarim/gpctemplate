@@ -348,6 +348,7 @@ a.header-button {
 .slider-hero {
     margin-top: -52px;
     position: relative;
+    z-index:9;
 }
 .hero-section {
     position: relative;
@@ -1236,6 +1237,7 @@ footer.one {
     background-size: cover;
     background-position: center;
     padding-top: 100px;
+    z-index:9;
 }
 footer.one:before {
     content: "";
@@ -1495,8 +1497,8 @@ header.two a.search-btn svg {
 }
 .experts-slider.owl-theme .owl-dots .owl-dot span,
 .two-slider.owl-theme .owl-dots .owl-dot span {
-    background: #b5b5b5;
-    border: 8px solid #b5b5b5;
+    background: white;
+    border: 8px solid white;
 }
 .two-slider{
     position: relative;
@@ -1505,7 +1507,7 @@ header.two a.search-btn svg {
     position: absolute;
     left: 0%;
     bottom: 20px;
-    width: 9%;
+    width: 12%;
 }
 /* 32. energize-society */
 .energize-society {
@@ -2713,6 +2715,10 @@ ul.pagination li {
     left: 0;
     bottom: 0;
 }
+.solar-pv i:hover:before{
+    background-color: white;
+
+}
 .solar-pv:hover:before {
     height: 100%;
 }
@@ -2721,6 +2727,9 @@ ul.pagination li {
 }
 .solar-pv:hover .team-info li{
     color: #BABABA;
+}
+.solar-pv:hover p{
+    color:white
 }
 /* 58. solar-system */
 .solar-system span{
