@@ -1397,6 +1397,7 @@ footer.one .logo {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -53px;
+    z-index:5
 }
 .featured-area-two:before,.banner:before {
     content: "";
