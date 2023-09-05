@@ -163,12 +163,10 @@ figure {
     justify-content: space-between;
 }
 .top-bar-text a {
-    text-transform: capitalize;
     font-weight: bold;
 }
 .top-bar-text p, .top-bar-text a {
     font-weight: 400;
-    text-transform: lowercase;
     color: white;
 }
 .top-bar-text a p:hover{
@@ -221,7 +219,7 @@ figure {
   color: #ff3f34;
   text-decoration: none;
   font-size: 25px;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .navbar-links {
@@ -232,7 +230,7 @@ figure {
     display: block;
     text-decoration: none;
     color: #707070;
-    padding: 10px 25px;
+    padding: 8px 20px;
     transition: 0.4s all;
 }
 .navbar-links li.navbar-dropdown {
@@ -320,11 +318,11 @@ figure {
 .menu-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #ffffff;
     border-radius: 54px;
+    justify-content: space-between;
     padding-left: 23px;
-    margin-top: -52px;
+    margin-top: -40px;
     z-index: 111;
     position: relative;
 }
@@ -337,16 +335,17 @@ a.header-button {
     background-color: #1573b9;
     color: white;
     font-weight: bold;
-    padding: 40px 34px;
+    padding: 25px 25px;
     border-radius: 70px;
     margin-left: 20px;
+    text-align: center;
 }
 .logo {
-    margin-top: -12px;
+    margin-top: -0;
 }
 /* 3. hero-section */
 .slider-hero {
-    margin-top: -52px;
+    margin-top: -60px;
     position: relative;
     z-index:9;
 }
@@ -1144,6 +1143,9 @@ form.request-quote-form input,form.request-quote-form textarea {
     padding-left: 30px;
     margin-bottom: 16px;
 }
+.latterbox.radio{
+    text-align:center
+}
 form.request-quote-form textarea {
     height: 115px;
     padding-top: 20px;
@@ -1396,7 +1398,7 @@ footer.one .logo {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -53px;
+    margin-top: -60px;
     z-index:5
 }
 .featured-area-two:before,.banner:before {
@@ -1425,18 +1427,18 @@ header.two a.header-button {
     background-color: #1573b9;
     color: white;
     font-weight: bold;
-    padding: 22px 34px;
+    padding: 15px 24px;
     border-radius: 70px;
     margin-left: 20px;
 }
 header.two .logo {
     background-color: #fff;
     padding: 20px;
-    margin-top: 0;
+    margin-top: 20px;
     border-radius: 61px;
     padding-top: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 header.two .navbar-links li > a {
     color: white;
@@ -1451,7 +1453,6 @@ header.two .menu-bar:before {
     height: 100%;
     content: "";
     border-radius: 73px;
-    left: 20%;
     z-index: -1;
 }
 header.two a.search-btn svg {
@@ -1698,11 +1699,10 @@ header.two a.search-btn svg {
     color: #1573b9;
     border-bottom: 1px solid;
     display: inline;
-    text-transform: uppercase;
 }
 .team-info h5 span {
     border: 0;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
 }
 .team-info h5{
@@ -2904,22 +2904,24 @@ ul.information {
     margin-top: 12px;
 }
 .circle:before {
-    content: "Home Shelter";
+    content: "Women in the Workforce";
     position: absolute;
     top: 60%;
-    right: 22%;
+    right: 4%;
     font-size: 15px;
 }
 .circle.two:before {
-    content: "Solar Energy";
+    content: "Engineer in the Workforce";
+    right: 2%;
+
 }
 .circle.three:before {
     content: "Save Global Energy";
     right: 28px;
 }
 .circle.for:before {
-    content: "Completed Projects";
-    right: 10%;
+    content: "Satisfied Clients";
+    right: 18%;
 }
 /* 64. Accordion styles */
 .tabs {
@@ -3192,7 +3194,7 @@ form.contact-form  label{
     border-radius: 30px;
 }
 .top-bar-text a p:hover{
-    color: #1573b9;
+    color: black;
 }
 .energize-society figure{
     border-radius: 50%;
@@ -3732,12 +3734,21 @@ form.request-quote-form h3 {
 .latterbox.slide form.request-quote-form {
     background-color: white;
     border: 5px solid #0a9642;
+    width:100%
 }
 .latterbox.slide form.request-quote-form input, .latterbox.slide form.request-quote-form textarea {
     background-color: #fafafa;
     padding-left: 30px;
     border: 1px solid #C1C1C1;
     position: relative;
+}
+.latterbox.form-check-input{
+ width: 1px, i !important;
+ height: 1px, i !important;
+ padding: -10% -32%;
+
+
+
 }
 .our-blog-text a:hover i,.sectors a:hover i {
     background-color: #0a9642;
@@ -3822,6 +3833,8 @@ form.request-quote-form button.button {
 }
 
 
+
+
 @keyframes shadow-pulse
 {
   0% {
@@ -3884,6 +3897,7 @@ form.request-quote-form button.button {
     .mlk{
         margin-left: 10%;
     }
+    /*
 }
 .social-buttons {
     position: fixed;
@@ -3893,51 +3907,71 @@ form.request-quote-form button.button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60px; /* Increase the icon width */
+    width: 60px; 
     height: 250px;
-    background-color: transparent; /* Background color of the buttons container */
+    background-color: transparent; 
   }
   
   .social-button {
     display: block;
-    margin-bottom: 20px; /* Adjust spacing between buttons */
+    margin-bottom: 20px; 
     padding: 10px;
     text-align: center;
     text-decoration: none;
     
 color:#000
 }
-.fa-2xl{
-    
-}
+
     .content {
-        margin-left: 100px; /* Adjust the margin to accommodate the buttons */
-        padding: 20px;
-        
-      }
-      .fa-linkedin-square {
-        color: #0A66C2;
-        background-color: #fff;
-        
-      }
-      .fa-facebook-square {
-       color: #3b5998;
-      background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
-      background-color: #fff;
-    
-      }
-      .fa-instagram-square {
-        font-size:30px;
-        background: radial-gradient(circle at 30% 107%, #fed373 4%, #f15245 30%, #d92e7f 62%,#d92e7f 62%,#9b36b7 85%, #515ecf); !important
-        -webkit-background-clip: text;
-        background-color: white;
-    }
-      .fa-youtube-square {
-        color: #FF0000;
-        background-color: #fff;
-      }
-      .fa-whatsapp-square {
-        color: #25D366;
-        background-color: #fff;
-      }
+        margin-left: 100px; 
+        padding: 20px;  
+    */
+ /* Style for the container holding social media buttons */
+ .social-media-buttons {
+    position: fixed;
+            right: 50px; /* Adjust the right distance as needed */
+            top: 50%; /* Vertically centered on the page */
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+  }
   
+  .social-media-buttons a {
+    width: 40px;
+            height: 40px;
+            background-color: #0077B5; /* LinkedIn blue */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+  }
+  
+  .social-media-buttons i {
+    font-size: 18px;
+    color: #333;
+  }
+  
+
+/* Additional styles for each button */
+.linkedin{
+    background-color: #0A66C2;
+}
+.facebook {
+    background-color: #3b5998; /* Facebook blue */
+}
+
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fed373 4%, #f15245 30%, #d92e7f 62%,#d92e7f 62%,#9b36b7 85%, #515ecf); !important /* Instagram pink */
+}
+
+.youtube {
+    background-color: #FF0000; /* YouTube red */
+}
+
+.whatsapp {
+    background-color: #25D366; /* WhatsApp green */
+}
